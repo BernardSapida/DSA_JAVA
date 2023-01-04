@@ -1,3 +1,5 @@
+package MA1;
+
 public class SelectionSort {
     public void sort(String[] data, String order) {
         for (int lastUnsortedIndex = data.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {

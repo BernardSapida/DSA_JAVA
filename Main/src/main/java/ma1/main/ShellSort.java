@@ -1,3 +1,5 @@
+package MA1;
+
 public class ShellSort {
     public void sort(String[] data, String order) {
         for (int gap = data.length / 2; gap > 0; gap /= 2) {

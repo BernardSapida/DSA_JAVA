@@ -1,3 +1,13 @@
+package ma1.main;
+
+import MA1.BubbleSort;
+import MA1.CountingSort;
+import MA1.InsertionSort;
+import MA1.MergeSort;
+import MA1.QuickSort;
+import MA1.RadixSort;
+import MA1.SelectionSort;
+import MA1.ShellSort;
 import java.util.Scanner;
 
 public class Main {
@@ -6,6 +16,9 @@ public class Main {
     InsertionSort insertionSort = new InsertionSort();
     ShellSort shellSort = new ShellSort();
     MergeSort mergeSort = new MergeSort();
+    QuickSort quickSort = new QuickSort();
+    RadixSort radixSort = new RadixSort();
+    CountingSort countingSort = new CountingSort();
     String[] arrData;
     String order;
 
@@ -24,8 +37,11 @@ public class Main {
             System.out.println("[3] Insertion Sort");
             System.out.println("[4] Shell Sort");
             System.out.println("[5] Merge Sort");
+            System.out.println("[6] Quick Sort");
+            System.out.println("[7] Radix Sort");
+            System.out.println("[8] Couting Sort");
             System.out.println("[0] Exit");
-            System.out.print("Choose [1-5]: ");
+            System.out.print("Choose [0-8]: ");
             String response = sc.nextLine();
 
             if(response.equals("0")) break;
@@ -40,6 +56,9 @@ public class Main {
             else if(response.equals("3")) insertionSort.sort(arrData, order);
             else if(response.equals("4")) shellSort.sort(arrData, order);
             else if(response.equals("5")) mergeSort.sort(arrData, order);
+            else if(response.equals("6")) quickSort.sort(arrData, order);
+            else if(response.equals("7")) radixSort.sort(arrData, order);
+            else if(response.equals("8")) countingSort.sort(arrData, order);
             else System.out.println("Input is invalid! Please try again.");
         }
     }

@@ -1,3 +1,5 @@
+package MA1;
+
 public class InsertionSort {
     public void sort(String[] data, String order) {
         for (int firstUnsortedIndex = 1; firstUnsortedIndex < data.length; firstUnsortedIndex++) {
